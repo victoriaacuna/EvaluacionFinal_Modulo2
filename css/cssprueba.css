@@ -1,0 +1,48 @@
+body{
+  display: block;
+  margin: auto;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+.derecha, .izquierda{
+  width: 100%;
+}
+.derecha{
+  background-color: green;
+}
+.izquierda{
+  background-color: blue;
+}
+.secimgsec {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.imgizq, .imgdere{
+  width: 100%;
+}
+@media all and (max-width: 900px){
+  body{
+    width: 100%;
+  }
+  .derecha, .izquierda{
+    width: 100%;
+  }
+  .imgizq, .imgdere{
+    width: 100%;
+  }
+}
+@media all and (min-width: 900px) {
+  body{
+    width: 900px;
+    }
+    .derecha, .izquierda{
+    width: 50%;
+    }
+  .imgizq, .imgdere {
+    width: 90%;
+    display: block;
+    margin: auto;
+    }
+}
