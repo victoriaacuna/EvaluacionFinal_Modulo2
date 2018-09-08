@@ -5,6 +5,23 @@ body{
 img {
   box-shadow: 2px 2px #02010a;
 }
+@keyframes entrada {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+header{
+  -webkit-animation: entrada 2s;
+  -moz-animation: entrada 2s;
+  -o-animation: entrada 2s;
+  animation: entrada 2s;
+}
 header{
   background-color: #5b7989;
   -webkit-border-radius: 10px 10px 0px 0px;
@@ -55,21 +72,30 @@ figcaption a{
   font-size: 150%;
   font-weight: bold;
 }
-.imgizq{ transform: rotate(0deg);
+.imgizq{
+  -webkit-ransform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
   transition: transform 2s;
 }
 .imgizq:hover {
+  -webkit-ransform: rotate(10deg);
+  -ms-transform: rotate(10deg);
   transform: rotate(10deg);
   box-shadow: 2px 2px #82c3a6;
   border: 2px;
 }
 .imgdere{
   transition: transform 2s;
+  -ms-transform: translate(0px,0px);
+  -webkit-ransform: translate(0px,0px);
   transform: translate(0px,0px);
 }
 .imgdere:hover{
   box-shadow: 2px 2px #82c3a6;
   border: 2px;
+  -webkit-ransform: translate(20px,-5px);
+  -ms-transform: translate(20px,-5px);
   transform: translate(20px,-5px);
 }
 footer{
